@@ -18,7 +18,7 @@
       console.log("DB opened: " + dbname);
     });
     this.openError || (this.openError = function(e) {
-      console.log(e.message);
+      console.log("error opening");
     });
     this.bg = !openargs.bgType ? (navigator.userAgent.match(/iPad/i)) || (navigator.userAgent.match(/iPhone/i)) : openargs.bgType === 1;
     this.open(this.openSuccess, this.openError);
